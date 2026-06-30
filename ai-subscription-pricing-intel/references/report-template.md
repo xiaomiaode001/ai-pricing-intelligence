@@ -116,7 +116,7 @@ Required columns:
 Rules:
 
 - Apple storefront only spot-checks App Store Price.
-- Do not use Apple spotcheck values to overwrite App Store Price aggregated values.
+- Do not use Apple spot-check values to overwrite App Store Price aggregated values.
 - If values conflict, show both and mark `conflict`.
 - Default accuracy mode is `balanced`: spot-check the detailed plan's lowest 3 regions, United States baseline, and highest region.
 - `high` mode expands spot checks to Top 10 low-price regions, United States, and Top 5 high-price regions.
