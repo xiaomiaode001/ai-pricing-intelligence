@@ -1,0 +1,6 @@
+retention_days: 14
+retain_minimum_per_product: 2
+auto_cleanup_on_today: true
+protected_files:
+  - .gitkeep
+  - data/fx/latest_fx_cny.json

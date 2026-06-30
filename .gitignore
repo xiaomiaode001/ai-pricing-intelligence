@@ -1,0 +1,28 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# Generated Skill runtime data
+ai-subscription-pricing-intel/data/raw/appstoreprice/*
+!ai-subscription-pricing-intel/data/raw/appstoreprice/.gitkeep
+ai-subscription-pricing-intel/data/fx/*
+!ai-subscription-pricing-intel/data/fx/.gitkeep
+ai-subscription-pricing-intel/data/normalized/*
+!ai-subscription-pricing-intel/data/normalized/.gitkeep
+ai-subscription-pricing-intel/data/snapshots/*
+!ai-subscription-pricing-intel/data/snapshots/.gitkeep
+ai-subscription-pricing-intel/outputs/*
+!ai-subscription-pricing-intel/outputs/.gitkeep
+
+# Temporary report/export files
+*.tmp
+*.log

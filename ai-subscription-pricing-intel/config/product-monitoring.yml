@@ -1,0 +1,55 @@
+products:
+  chatgpt:
+    provider: OpenAI
+    product: ChatGPT
+    app_store_id: "6448311069"
+    source_url: https://appstoreprice.org/zh/apps/6448311069
+    official_pricing_url: https://chatgpt.com/pricing/
+    default_report_plan: ChatGPT Plus 1月
+    aliases:
+      - GPT
+      - ChatGPT
+      - GPT套餐监测
+      - ChatGPT套餐监测
+      - ChatGPT 订阅监测
+      - OpenAI套餐监测
+  claude:
+    provider: Anthropic
+    product: Claude
+    app_store_id: "6473753684"
+    source_url: https://appstoreprice.org/en/apps/6473753684
+    official_pricing_url: https://claude.com/pricing
+    default_report_plan: Claude Pro 1月
+    aliases:
+      - Claude
+      - Claude套餐监测
+      - Claude 订阅监测
+      - Anthropic套餐监测
+  gemini:
+    provider: Google
+    product: Google Gemini
+    app_store_id: "6477489729"
+    source_url: https://appstoreprice.org/en/apps/6477489729
+    official_pricing_url: https://gemini.google/subscriptions/
+    default_report_plan: Google AI Pro (5 TB) 1月
+    aliases:
+      - Gemini
+      - Google Gemini
+      - Gemini套餐监测
+      - Gemini 订阅监测
+      - Google AI套餐监测
+  grok:
+    provider: xAI
+    product: Grok
+    app_store_id: "6670324846"
+    source_url: https://appstoreprice.org/en/apps/6670324846
+    official_pricing_url: https://x.ai/grok
+    default_report_plan: SuperGrok 1月
+    aliases:
+      - Grok
+      - Gork
+      - xAI
+      - Grok套餐监测
+      - Gork套餐监测
+      - Grok 订阅监测
+      - xAI套餐监测

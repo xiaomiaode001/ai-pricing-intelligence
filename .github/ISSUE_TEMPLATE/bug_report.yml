@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a parsing, FX, spotcheck, or report output problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: The command or prompt that triggered the issue.
+      placeholder: python -X utf8 scripts/collect_appstoreprice_intel.py --today --intent-text "GPT套餐监测"
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: text
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed generated raw snapshots, credentials, cookies, and private account data from this issue.
+          required: true

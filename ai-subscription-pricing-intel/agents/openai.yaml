@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Subscription Pricing Intel"
+  short_description: "Compare global iOS AI subscription price gaps."
+  default_prompt: "Use $ai-subscription-pricing-intel to compare ChatGPT Plus iOS regional prices and identify the largest price gaps."
