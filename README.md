@@ -123,12 +123,25 @@ flowchart LR
 
 ## 快速开始 / Quick Start
 
-Use Python 3.10+; Python 3.12 is recommended. Run commands with UTF-8 enabled.
+Clone the repository first, then enter the Skill package directory. Use Python 3.10+; Python 3.12 is recommended. Run commands with UTF-8 enabled.
 
 ```powershell
-cd "E:\AI Pricing Intelligence\ai-subscription-pricing-intel"
+git clone https://github.com/xiaomiaode001/ai-pricing-intelligence.git
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -X utf8 scripts/check_environment.py --strict
+```
+
+For macOS/Linux:
+
+```bash
+git clone https://github.com/xiaomiaode001/ai-pricing-intelligence.git
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
+python3 -m venv .venv
+source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -X utf8 scripts/check_environment.py --strict
@@ -148,12 +161,17 @@ Daily reports are written to `ai-subscription-pricing-intel/outputs/`.
 ## 校验 / Validation
 
 ```powershell
-cd "E:\AI Pricing Intelligence\ai-subscription-pricing-intel"
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
 python -X utf8 scripts/check_environment.py --strict
 python -X utf8 scripts/check_release_readiness.py --strict
 python -X utf8 -m unittest discover -s tests
 python -X utf8 -m compileall scripts
-python -X utf8 C:\Users\JS\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
+```
+
+Optional Codex Skill validation, if you have the Codex skill creator available locally:
+
+```powershell
+python -X utf8 "<path-to-skill-creator>/scripts/quick_validate.py" .
 ```
 
 ## 数据安全 / Data Safety

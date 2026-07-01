@@ -14,7 +14,14 @@ This Skill is designed to run with a small Python environment. Runtime scripts u
 
 ## Install
 
-From `E:\AI Pricing Intelligence\ai-subscription-pricing-intel`:
+From the cloned repository:
+
+```powershell
+git clone https://github.com/xiaomiaode001/ai-pricing-intelligence.git
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
+```
+
+Then create the Python environment:
 
 ```powershell
 python -m venv .venv
@@ -30,7 +37,12 @@ If activation is not desired, run with the system Python and install the same re
 ```powershell
 python -X utf8 scripts/check_environment.py
 python -X utf8 scripts/check_environment.py --network
-python -X utf8 C:\Users\JS\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
+```
+
+Optional official Codex Skill validation, if the Codex skill creator is installed locally:
+
+```powershell
+python -X utf8 "<path-to-skill-creator>/scripts/quick_validate.py" .
 ```
 
 Use `--strict` when preparing the project for another user; it treats warnings as failures.

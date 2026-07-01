@@ -56,12 +56,24 @@ Rules:
 
 ## 安装 / Install
 
+From the cloned repository:
+
+```powershell
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
+```
+
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -X utf8 scripts/check_environment.py --strict
+```
+
+For macOS/Linux, activate the virtual environment with:
+
+```bash
+source .venv/bin/activate
 ```
 
 ## 日常监测 / Daily Monitoring
@@ -90,7 +102,12 @@ python -X utf8 scripts/check_environment.py --strict
 python -X utf8 scripts/check_release_readiness.py --strict
 python -X utf8 -m unittest discover -s tests
 python -X utf8 -m compileall scripts
-python -X utf8 C:\Users\JS\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
+```
+
+Optional Codex Skill validation, if you have the Codex skill creator available locally:
+
+```powershell
+python -X utf8 "<path-to-skill-creator>/scripts/quick_validate.py" .
 ```
 
 ## 运行数据 / Runtime Data

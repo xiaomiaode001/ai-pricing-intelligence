@@ -22,7 +22,7 @@ Use this before publishing the repository to GitHub.
 ## Validation
 
 ```powershell
-cd "E:\AI Pricing Intelligence\ai-subscription-pricing-intel"
+cd ai-pricing-intelligence/ai-subscription-pricing-intel
 python -m pip install -r requirements.txt
 python -X utf8 scripts/check_environment.py --strict
 python -X utf8 scripts/check_release_readiness.py --strict
@@ -33,7 +33,7 @@ python -X utf8 -m compileall scripts
 Run official Skill validation:
 
 ```powershell
-python -X utf8 C:\Users\JS\.codex\skills\.system\skill-creator\scripts\quick_validate.py .
+python -X utf8 "<path-to-skill-creator>/scripts/quick_validate.py" .
 ```
 
 ## Data Safety
